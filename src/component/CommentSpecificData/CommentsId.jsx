@@ -1,9 +1,16 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 
 const CommentsId = () => {
 
     let comments=useLoaderData();
+
+    let navigate=useNavigate()
+    
+
+    let handleGoback=()=>{
+        navigate(-1)
+    }
 
    
     return (
@@ -16,6 +23,8 @@ const CommentsId = () => {
             <h1>{comments.name}</h1>
             <h2>{comments.email}</h2>
             <p className='flex-grow'>{comments.body}</p>
+
+            <button className='btn btn-primary' onClick={handleGoback}>Go Back</button>
            </div>
             
         </div>
