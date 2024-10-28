@@ -15,6 +15,7 @@ const Nav = () => {
                     <NavLink to="/contact" className="btn mr-3">Contact</NavLink>
                     <NavLink to="/user" className="btn mr-3">User</NavLink>
                     <NavLink to="/comment" className="btn mr-3">Comments</NavLink>
+                    <NavLink to="/photos" className="btn mr-3">Meals</NavLink>
                     {/* <Link className='btn btn-warning mr-3' to="/about">About</Link>
                     <Link className='btn btn-warning mr-3' to="/contact">Contact</Link>
                     <Link className='btn btn-warning mr-3' to="/user">User</Link>
