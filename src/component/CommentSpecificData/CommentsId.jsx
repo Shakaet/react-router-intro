@@ -1,9 +1,12 @@
 import React from 'react';
-import { useLoaderData, useNavigate } from 'react-router-dom';
+import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 
 const CommentsId = () => {
 
     let comments=useLoaderData();
+
+    // let params = useParams();
+    // console.log(params.id)
 
     let navigate=useNavigate()
     

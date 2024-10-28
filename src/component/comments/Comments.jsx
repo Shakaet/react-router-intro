@@ -5,6 +5,8 @@ import ComDeta from '../CommentsDetails/ComDeta';
 const Comments = () => {
 
     let comments= useLoaderData();
+
+    
     return (
         <div>
 

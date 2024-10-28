@@ -15,11 +15,13 @@ import User from './component/User/User.jsx';
 import UserDetails from './component/detailsUsers/UserDetails.jsx';
 import Comments from './component/comments/Comments.jsx';
 import CommentsId from './component/CommentSpecificData/CommentsId.jsx';
+import Error from './component/Error/Error.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Header></Header>,
+    errorElement:<Error></Error>,
     children: [
       {
         path: "/contact",
